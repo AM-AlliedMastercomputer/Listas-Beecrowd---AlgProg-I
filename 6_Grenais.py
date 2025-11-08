@@ -1,4 +1,4 @@
-c = 0
+n = 1
 grenais = 1
 emp = 0
 inter = 0
@@ -17,7 +17,8 @@ print ("Novo grenal (1-sim 2-nao)")
 entrada = int(input())
 #-----------------------------------------------
 if entrada == 1:
-    while entrada == 1:
+    for i in range (1, 100000):
+        n = 1
         gi, gg = map(int, input().split())
         grenais += 1
         if gi > gg:
@@ -26,14 +27,14 @@ if entrada == 1:
             gremio += 1
         elif gg == gi:
             emp += 1
+        #-----------------------------------------
         print ("Novo grenal (1-sim 2-nao)")
         entrada2 = int(input())
-        if entrada2 == 1:
-            entrada += 0
-        elif entrada2 == 2:
-            entrada += 1
-        else: 
-            entrada += 0
+        if entrada2 == 2:
+             break
+        else:
+             n += 1
+             
 #-------------------------------------------------
 print (f"{grenais} grenais")
 print (f"Inter:{inter}") 
