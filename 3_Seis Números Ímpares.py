@@ -1,15 +1,7 @@
-x = int(input())
-
-c = 0
-
-if x % 2 == 0:
-    x += 1
-    while c < 6:
-        print (f"{x}")
-        x += 2
-        c += 1
-else:
-    while c < 6:
-        print (f"{x}")
-        x += 2
-        c += 1
+n = int(input())
+#-----------------------
+for i in range (1, 7, 1):
+    if n % 2 == 0:
+        n += 1
+    print (n)
+    n += 2

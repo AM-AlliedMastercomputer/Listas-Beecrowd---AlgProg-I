@@ -1,17 +1,15 @@
-n =  int(input())
-
-inn = 0
-out = 0
-c = 0
-x = 0
-soma = 0
-
-while c < n:
-    x = int(input())
-    if x >= 10 and x <= 20:
-        inn += 1
-    out = n - inn
-    c += 1
-
-print (f"{inn} in")
-print (f"{out} out")
+n = int(input())
+a = 0
+drentro = 0
+frora = 0
+#-----------------------------
+for i in range (1, n + 1, 1):
+    a = int(input())
+    if a >= 10 and a <= 20:
+        drentro += 1
+    else: 
+        frora += 1
+#-----------------------------
+print (f"{drentro} in")
+print (f"{frora} out")
+        

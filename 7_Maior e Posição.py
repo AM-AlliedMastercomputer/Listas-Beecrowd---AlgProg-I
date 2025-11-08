@@ -1,13 +1,12 @@
-c = 0
-sub = 0
+n = 0
 quando = 0
-#----------------------
-while c < 100: 
-    c += 1
+ultimo = 0 
+#-----------------------------
+for i in range (1, 101, 1):
     n = int(input())
-    if n > sub:
-        sub = n
-        quando = c
-#----------------------
-print (sub)
+    if n >  ultimo:
+        ultimo = n
+        quando = i
+#-----------------------------
+print (ultimo)
 print (quando)
